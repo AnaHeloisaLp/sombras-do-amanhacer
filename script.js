@@ -1,6 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
     const botoesProximo = document.querySelectorAll('.btn-proximo');
     const passos = document.querySelectorAll('.passo');
-    
+
     botoesProximo.forEach(botao => {
         botao.addEventListener('click', () => {
             const proximoPasso = botao.getAttribute('data-proximo');
@@ -10,3 +11,4 @@
             document.getElementById(`passo-${proximoPasso}`).classList.add('ativo');
         });
     });
+});
