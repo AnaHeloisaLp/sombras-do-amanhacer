@@ -1,33 +1,34 @@
-body {
-    background-color: #1D4221;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    margin: 0;
-}
-
-button {
-    background-color: #64A712;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-}
-
-.passo {
-    display: none;
-}
-
-.passo.ativo {
-    display:block;
-}
-
-main {
-    text-align: center;
-    max-width: 90%;
-}
-
-img {
-    max-width: 90%;
-}
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn-proximo {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-proximo:hover {
+            background-color: #0056b3;
+        }
+        .passo {
+            display: none;
+        }
+        .passo.ativo {
+            display: block;
+        }
+    </style>
