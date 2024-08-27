@@ -1,14 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const botoesProximo = document.querySelectorAll('.btn-proximo');
-    const passos = document.querySelectorAll('.passo');
+const avanca = document.querySelectorAll('.btn-proximo');
 
-    botoesProximo.forEach(botao => {
-        botao.addEventListener('click', () => {
-            const proximoPasso = botao.getAttribute('data-proximo');
-            passos.forEach(passo => {
-                passo.classList.remove('ativo');
-            });
-            document.getElementById(`passo-${proximoPasso}`).classList.add('ativo');
-        });
-    });
-});
+avanca.forEach(button => {
+    button.addEventListener('click',function(){
+        const atual = document.querySelector('ativo');
+        const proximoPasso = 'passo' + this.getAttribute('data-proximo');
+        
+        atual.classList.remover('ativo');
+        document.getElementById(proximoPasso).classList.add('ativo');
+           )}
+)}
+        
